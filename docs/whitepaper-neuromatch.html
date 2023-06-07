@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="twitter:widgets:csp" content="on">
+    <meta name="twitter:dnt" content="on">
+    <title>Scholar Nexus - Neuromatch Open Publishing White Paper</title>
+    <link rel="STYLESHEET" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="scholar-nexus-logo.png" height="40" class="d-inline-block align-top pr-3" alt="Scholar Nexus">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>  
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">Scholar Nexus</a>
+        <a class="nav-item nav-link active" href="whitepaper.html">White Papers</a>
+        <a class="nav-item nav-link" href="about.html">About</a>
+        <a class="nav-item nav-link" href="contact.html">Contact us</a>
+      </div>
+    </div>  
+  </nav>
+
+  <div class="container" style="text-align: justify;">
+    <div class="row">
+      <div class="col">
+        
+        <h1 class="pt-5" style="text-align: center">Scholar Nexus</h1>
+        <h2 class="pt-5 pb-5" style="text-align: center">Neuromatch Open Publishing White Paper</h2>
+
+<h3>Summary</h3>
+
+
+<p>
+We need to replace our outdated and undemocratic publishing system with one which is free to read and publish, reliable, archival, flexible and democratically governed. We propose to do so with a two layer system. The foundational layer is a commonly owned, distributed infrastructure that will maintain a freely and openly accessible database built on a flexible graph structure to allow new and arbitrary methods of publishing and scholarly productivity. The services layer will be provided by a number of third parties building on this flexible infrastructure. All code will be fully open source with permissive licenses.
+</p>
+<h3>Neuromatch</h3>
+
+
+<p>
+Neuromatch is a grassroots non-profit organization that made its name serving the scientific community through democratizing access to science and education. Our expertise is in building and supporting scalable scientific communities using a network of volunteers and technology, utilizing our unique algorithmic content-based matching of scientists and scientific work. We have shown that incredible, mutually supportive and self-sustaining communities can emerge when technology is designed to empower them. We believe this model can be extended to other parts of research life, and that <strong>democratizing research </strong>will make it better for everyone. Not only that, but that the conditions are right to make fundamental changes to the way we work. 
+</p>
+<h3>Why publishing</h3>
+
+
+<p>
+Publishing is one of the least innovative and democratic aspects of research. Under the current model of scholarly publishing, knowledge is either hidden away behind the ability to pay (subscription model), or alternatively made available to all but only if the authors pay exorbitant article processing charges (APCs) that only well funded researchers can afford. Not only that, but since publishers compete on prestige rather than price or features, we can expect little to change for the better if we leave it to them.
+</p>
+<p>
+We believe that the time is right for researchers to take control of one of the fundamental parts of research infrastructure - the publishing system - to ensure that it serves their needs (and the needs of the wider public) and can evolve and improve over time.
+</p>
+<h3>Principles</h3>
+
+
+<p>
+A publishing system should be:
+</p>
+<ol>
+
+<li><strong>Free to read.</strong> Research is a public good and should be made freely available to all.
+
+<li><strong>Free to publish.</strong> Participation in research should be equally accessible to all.
+
+<li><strong>Reliable.</strong> We need to know that the system will not disappear overnight.
+
+<li><strong>Archival.</strong> Humanity’s knowledge should be preserved and accessible.
+
+<li><strong>Flexible.</strong> We can’t predict what we will need in the future in terms of what we want to publish, how we evaluate it, peer review, etc., so our publishing system should be flexible enough to cater for many different possibilities. Another way of putting this is that scholarly output is data, and that should follow <a href="https://en.wikipedia.org/wiki/FAIR_data">FAIR principles</a>.
+
+<li><strong>Democratic.</strong> The system must serve the needs of the research community, be accountable and transparent.
+</li>
+</ol>
+<h3>Proposal</h3>
+
+
+<h4>Organization</h4>
+
+
+<p>
+We propose to separate publishing into two layers. The foundation is a <strong>commonly owned publishing infrastructure</strong> (<em>democratically governed</em>). A <strong>coalition of research institutions</strong> (university libraries etc.) will fund and maintain a <strong>decentralized database</strong> that is mirrored across multiple servers, ensuring <em>reliability </em>and <em>archivability</em>. Read <strong>access to this database will be fully open and free</strong>, and write access will be made as widely available as possible consistent with maintaining security and certain standards (<em>free to read and publish</em>). This database will hold all the core scholarly content, including articles, reviews, comments, and metadata (see below for more details). On top of this foundation, multiple <strong>independent third parties will build different services and models of publishing</strong>. Access to the core data is free and interoperable, so content made using one service or model will be available in others (<em>flexible</em>).
+</p>
+<p>
+
+<img src="layers.svg" width="80%" alt="drawing">
+
+</p>
+<h4>Data structure</h4>
+
+
+<p>
+The core database will use a graph data format. Nodes on the graph will either correspond to items of content such as articles, reviews or comments, or to users, groups of users or institutions such as journals or universities. In addition to nodes, the graph contains labeled links between nodes indicating relationships, for example “X is-a-review-of Y”, “A is-an-author-of Y”, “J endorses X”.
+</p>
+<p>
+This data structure is rich enough to represent traditional peer review and publishing workflows (see diagram below) as well as to experiment with new approaches such as post-publication peer review (which just changes the order that nodes and links are added to the graph).
+</p>
+<p>
+
+<img src="graph-traditional.svg" width="80%" alt="drawing">
+
+</p>
+<h4>Third party services</h4>
+
+
+<p>
+We cannot enumerate all the possible third party services that will build on such an infrastructure, because the whole point is to allow for unforeseen innovation, however we can give some examples of services that we intend to provide or expect others to provide.
+</p>
+<ul>
+
+<li><strong>For readers</strong> 
+<ul>
+ 
+<li><strong>Content viewers</strong>. Display document in HTML format in different ways. Experiment with dynamically loading related content in side panel.
+ 
+<li><strong>Profile view</strong>. Overview of the activity of a user, group or organization.
+ 
+<li><strong>Recommendations</strong>. Suggest related content, users, etc.
+ 
+<li><strong>Download</strong>. In different formats such as HTML, Word, LaTeX, etc.
+</li> 
+</ul>
+
+<li><strong>For authors</strong> 
+<ul>
+ 
+<li><strong>Content editors</strong>. For example, using a high level format such as Markdown which can easily be converted into different formats. Experiment with productivity features such as content-aware citation manager.
+ 
+<li><strong>Drag and drop file upload</strong>. Another way to add content.
+ 
+<li><strong>Resubmission tool</strong>. Partially or fully automate the procedure of resubmitting content published on the platform to legacy journals to support researchers careers in the short to medium term.
+</li> 
+</ul>
+
+<li><strong>For communities</strong> 
+<ul>
+ 
+<li><strong>Communities</strong>. Find and build communities manually or semi-automatically using matching algorithms.
+ 
+<li><strong>One-click journal or conference management</strong>. Use the system to automatically manage submissions, review, etc. for a journal or conference.
+</li> 
+</ul>
+</li> 
+</ul>
+<h4>Funding model</h4>
+
+
+<p>
+Neuromatch will use grant-based income to fund initial development of the infrastructure and some initial third party service offerings. Sustainable long-term funding will be from coalition organizations paying an annual fee (based on usage, ability to pay, etc.).
+</p>
+<h3>Building support</h3>
+
+
+<p>
+It’s not enough to have a good system, there needs to be a plan to build and grow support for it, especially given the strong career incentives to publish work in the traditional journal system. Our plan includes:
+</p>
+<ul>
+
+<li><strong>Neuromatch. </strong>We will use this system throughout our organization, and thereby build support for it amongst an already enthusiastic and idealistic community.
+
+<li><strong>Preprint+</strong>. Initially this system will serve as an enhanced preprint server with community ownership. Preprint servers have been highly successful, and our model for growth here is providing a more flexible service that enables an ecosystem of third party tools to maximize the value of using this service rather than others.
+  
+  We expect authors to resubmit their work to legacy journals in the short to medium term due to career incentives, and we provide tools that help with that. 
+
+<li><strong>Career support</strong>. Publications and metrics of their success will remain a critical part of how scientists build their careers in the short to medium term, and our system will help strengthen CVs. We will provide tools to make publishing easier, freeing up time and enhancing productivity. These tools will work both for the new approach we champion, but also to reduce the burden of publishing in legacy journals. Papers with preprints already receive more citations than papers without, and with enhanced versions of papers, community and discovery features built in, our system will further boost the visibility of work produced using it.</li>
+
+<li><strong>Institutional support</strong>. We will work with governments, funders and universities to either mandate or encourage use of this system (e.g. declare it compliant with legal requirements). For example, we could offer to provide “house journals” for funders who want an open access mandate, or offer a unified open access repository to universities.
+
+<li><strong>Third party service support</strong>. By working with third parties, making it easier for them to build innovative services on top of this infrastructure, we will create the conditions in which it is more pleasurable and productive to use this system.
+
+<li><strong>Community support</strong>. By building services expressly designed to foster the formation and cohesion of research communities, we will create long-lasting investment in this alternative approach allowing for communities to have enough confidence in an alternative system to start to abandon legacy publishers.        
+
+</ul>
+
+  <h3>Contact us</h3>
+
+        <p>
+          We look forward to sharing more with you soon. If you would be interested in testing the system, volunteering, or would like to get involved in any way, please register your interest with our signup form. Or, <a href="mailto:nmop@neuromatch.io">contact us</a> by email. We would particularly love to hear from university libraries and funders interested in creating an open publishing mandate.
+        </p>
+
+        <p class="pt-3">
+          <a href="https://airtable.com/shrYyogbJq9KkNXzy"><button type="button" class="btn btn-primary" style="font-size: 120%;">Sign up to register your interest</button></a>
+        </p>
+
+        <p>&nbsp;</p>
+
+      </div>
+    </div>      
+  </div>
+
+  <!-- Optional JavaScript for Bootstrap -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
